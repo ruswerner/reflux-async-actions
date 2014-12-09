@@ -1,0 +1,22 @@
+{
+  "name": "reflux-async-actions",
+  "version": "0.0.1",
+  "description": "Example project showing how to accomplish async data requests using Reflux actions",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Russel Werner (rus.werner@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^7.0.0",
+    "gulp": "^3.8.10",
+    "gulp-util": "^3.0.1",
+    "http-server": "^0.7.4",
+    "react": "^0.12.1",
+    "reactify": "^0.17.1",
+    "reflux": "^0.2.1",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
