@@ -8,9 +8,9 @@ var AccountForm = React.createClass({
     },
 
     onChange: function(event) {
-        var obj = {};
-        obj[event.target.id] = event.target.value;
-        this.setState(obj);
+        this.setState({
+            [event.target.id]: event.target.value
+        });
     },
 
     saveAccountSettings: function() {

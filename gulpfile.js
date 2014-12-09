@@ -12,7 +12,7 @@ gulp.task('bundle', function () {
         cache: {},
         packageCache: {},
         fullPaths: false,
-        transform: ['reactify']
+        transform: ['reactify','6to5-browserify']
     })
         .bundle()
         .on('error', function(err){
