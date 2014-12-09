@@ -1,4 +1,4 @@
-class AbstractAction {
+class BaseAction {
 
     constructor() {
     }
@@ -15,4 +15,4 @@ class AbstractAction {
     }
 }
 
-module.exports = AbstractAction;
+module.exports = BaseAction;
