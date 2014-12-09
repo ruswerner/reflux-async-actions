@@ -1,5 +1,5 @@
 var React = require('react');
-var UserActions = require('../actions/UserActions');
+var AccountActions = require('../actions/AccountActions');
 
 var AccountForm = React.createClass({
 
@@ -14,7 +14,7 @@ var AccountForm = React.createClass({
     },
 
     saveAccountSettings: function() {
-        UserActions.saveAccountSettings(this.state);
+        AccountActions.saveAccountSettings(this.state);
     },
 
     render: function () {

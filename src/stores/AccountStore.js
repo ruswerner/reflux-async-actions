@@ -1,11 +1,10 @@
 var React = require('react/addons');
 var Reflux = require('reflux');
-var UserActions = require('../actions/UserActions');
-var ServerActions = require('../actions/ServerActions');
+var AccountActions = require('../actions/AccountActions');
 
 var AccountStore = Reflux.createStore({
 
-    listenables: [UserActions, ServerActions],
+    listenables: [AccountActions],
 
     init: function () {
         this.state = {
@@ -26,13 +25,13 @@ var AccountStore = Reflux.createStore({
         this.trigger(this.state);
     },
 
-    onSaveAccountSettingsFailed: function (error) {
+    onSaveAccountSettingsFail: function (error) {
         this.state.saving = false;
         this.state.error = error;
         this.trigger(this.state);
     },
 
-    onSaveAccountSettingsComplete: function () {
+    onSaveAccountSettingsSuccess: function () {
         this.state.saving = false;
         this.state.error = null;
         this.trigger(this.state);
