@@ -11,7 +11,7 @@ class BaseAction {
     }
 
     dispatch() {
-        // override this to dispatch an action event
+        // override this to perform async logic as part of an action dispatch
     }
 }
 
