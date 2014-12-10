@@ -9,7 +9,7 @@ class SaveAccountSettingsAction extends BaseAction {
             if(err) {
                 AccountActions.saveAccountSettingsFail("Could not save account settings!");
             } else {
-                AccountActions.saveAccountSettingsSuccess(accountSettings);
+                AccountActions.saveAccountSettingsSuccess();
             }
         });
     }

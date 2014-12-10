@@ -13,6 +13,10 @@ var AccountForm = React.createClass({
         });
     },
 
+    componentWillReceiveProps: function(nextProps) {
+        this.replaceState(nextProps.account);
+    },
+
     saveAccountSettings: function() {
         AccountActions.saveAccountSettings(this.state);
     },
